@@ -1,3 +1,59 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:whitesmoke;
+}
+
+#soundBarContainer {
+    display: flex;
+    align-items: center;
+}
+
+#soundBar {
+    width: 400px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#soundLevel {
+    width: 0;
+    height: 100%;
+    background-color: #007bff; /* Change the color as needed */
+    transition: width 0.1s ease-in-out;
+}
+
+#decibelDisplay {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+   background-color:rgb(194, 194, 243);
+   color:white;
+   border:none;
+   width:100px;
+   margin-top:15px;
+   height:20px;
+   transition:0.4s;
+}
+
+button:hover {
+    background-color: rgb(117, 117, 197);
+}
+
