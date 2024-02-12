@@ -84,16 +84,21 @@ startButton.addEventListener('click', function() {
 });
 
 const pauseButton = document.getElementById('pauseButton');
+const nextbutton = document.getElementById('nextbutton');
+
 pauseButton.addEventListener('click', function() {
     paused = !paused; // Toggle pause state
 
     if (paused) {
         pauseButton.textContent = 'Resume';
         cancelAnimationFrame(animationFrameId);
+        nextbutton.style.animation = 'blink 1s infinite linear'; 
     } else {
         pauseButton.textContent = 'Pause';
         updateDecibelMeter(); // Resume updating the decibel meter
+        nextbutton.style.animation = 'none'; 
     }
+
 });
 
 const resetButton = document.getElementById('resetButton');
@@ -101,5 +106,12 @@ resetButton.addEventListener('click', function() {
     // Reload the page
     location.reload();
 });
+
+
+$("#nextbutton").click(
+    function(){
+        window.location.href = "https://kali-tan.github.io/pigmentpianist/hexcode.html"; 
+    }
+)
 
 

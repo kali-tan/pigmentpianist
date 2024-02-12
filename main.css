@@ -35,6 +35,7 @@ body {
 #decibelDisplay {
     font-size: 16px;
     margin-top: 10px;
+    font-family: Digital ;
 }
 
 #buttonContainer {
@@ -44,7 +45,7 @@ body {
 }
 
 button {
-   background-color:rgb(194, 194, 243);
+   background-color:#007bff;
    color:white;
    border:none;
    width:100px;
@@ -54,6 +55,62 @@ button {
 }
 
 button:hover {
-    background-color: rgb(117, 117, 197);
+    background-color: #144a84;
 }
 
+.main-container {
+    display:flex;
+    flex-direction:column;
+}
+
+.top {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin-bottom:100px;
+    align-content:center;
+    /* background-color:orange; */
+    font-size:50px;
+    font-family: Digital;
+    animation:blink 4s infinite linear;
+}
+
+@font-face {
+    font-family: "Digital";
+    src: url("fonts/digital-7\ \(mono\).ttf");
+    src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
+    font-weight:100px;
+    font-style:normal;
+}
+
+@keyframes blink {
+    0% {
+        color:black;
+    }
+
+    50% {
+        color:#007bff;
+    }
+
+    100% {
+        color:black;
+    }
+}
+
+.bottom {
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin-top:100px;
+    font-family: Digital ; 
+    font-size: 25px;
+}
+
+#nextbutton {
+    background-color:none;
+    padding:10px;
+}
+
+#nextbutton:hover {
+    color:blue;
+}
