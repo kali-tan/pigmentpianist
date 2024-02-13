@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>-</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hex Code Calculator</title>
+  <link rel="stylesheet" href="main.css">
+</head>
 
-    <body>
+<body>
+  <div class="container">
+    <label for="red">Current dB:</label>
+    <input type="number" id="red" min="0" max="255">
 
-    </body>
+    <label for="green">Average dB:</label>
+    <input type="number" id="green" min="0" max="255">
+
+    <label for="blue">Max dB:</label>
+    <input type="number" id="blue" min="0" max="255">
+
+    <button id="calculateButton">Calculate</button>
+
+    <div id="result"></div> <!-- Result display area -->
+  </div>
+
+  <div class="bottom">
+    <div class="one">
+      <a href="index.html">
+        <img src="images/backarrow.png" width="100px">
+      </a>
+    </div>
+    <div id="2"></div>
+    <div class="three2">
+        <a href="hexcode.html">
+            <img src="images/arrow.png" width="100px">
+        </a>
+    </div>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script1.js"></script>
+  
+</body>
 </html>
