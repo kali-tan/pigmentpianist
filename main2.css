@@ -17,5 +17,23 @@ body {
   
   label {
     margin-right: 10px;
+    font-family: Digital; 
   }
+
+  button {
+    background-color:#007bff;
+    color:white;
+    border:none;
+    width:100px;
+    height:25px;
+    transition:0.4s;
+ }
   
+ button:hover {
+  background-color: #144a84;
+  cursor:pointer;
+}
+
+.one {
+  margin-top: 30px;
+}
