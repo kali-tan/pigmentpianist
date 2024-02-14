@@ -76,3 +76,11 @@ body {
     font-size:10px;
     text-align:center;
 }
+
+@font-face {
+    font-family: "Digital";
+    src: url("fonts/digital-7\ \(mono\).ttf");
+    src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
+    font-weight:100px;
+    font-style:normal;
+}

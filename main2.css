@@ -47,6 +47,14 @@ body {
   cursor:pointer;
 }
 
+@font-face {
+  font-family: "Digital";
+  src: url("fonts/digital-7\ \(mono\).ttf");
+  src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
+  font-weight:100px;
+  font-style:normal;
+}
+
 .bottom {
   display:flex;
   flex-direction: row; 
@@ -55,3 +63,4 @@ body {
   font-family: Digital ; 
   font-size: 25px;
 }
+
