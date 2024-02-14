@@ -11,22 +11,27 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Button clicked');
 
         // Get the values of the input fields
-        const red = parseInt(document.getElementById('red').value);
-        const green = parseInt(document.getElementById('green').value);
-        const blue = parseInt(document.getElementById('blue').value);
+        const redScaled = scaleValue(document.getElementById('red').value);
+        const greenScaled = scaleValue(document.getElementById('green').value);
+        const blueScaled = scaleValue(document.getElementById('blue').value);
 
         console.log('Red:', red);
         console.log('Green:', green);
         console.log('Blue:', blue);
 
         // Calculate the hex code
-        const hexCode = rgbToHex(red, green, blue);
+        const hexCode = rgbToHex(redScaled, greenScaled, blueScaled);
         console.log('Hex code:', hexCode);
 
         // Display the result
         document.getElementById('result').textContent = `Hex Code: ${hexCode}`;
     });
 });
+
+// Function to scale the input value from 1-100 to 0-255
+function scaleValue(value) {
+    return Math.round((value / 100) * 255);
+}
 
 function rgbToHex(red, green, blue) {
     const redHex = red.toString(16).padStart(2, '0');

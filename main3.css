@@ -33,8 +33,8 @@ body {
 }
 
 .one {
-    background-color:#00495b;
-    color:#00495b;
+    background-color:#b0b8c2;
+    color:#b0b8c2;
     font-size:10px;
     text-align:center;
 }
@@ -42,20 +42,6 @@ body {
 .item:hover {
     cursor:pointer;
     color:white;
-}
-
-.two {
-    background-color:#322332;
-    color:#322332;
-    font-size:10px;
-    text-align:center;
-}
-
-.three {
-    background-color:#554d5e;
-    color:#554d5e;
-    font-size:10px;
-    text-align:center;
 }
 
 .backarrow {
@@ -70,12 +56,6 @@ body {
     justify-content:center;
 }
 
-.four {
-    background-color:#314612;
-    color:#314612;
-    font-size:10px;
-    text-align:center;
-}
 
 @font-face {
     font-family: "Digital";
@@ -83,11 +63,4 @@ body {
     src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
     font-weight:100px;
     font-style:normal;
-}
-
-.five {
-    background-color:#393841;
-    color:#393841;
-    font-size:10px;
-    text-align:center;
 }
