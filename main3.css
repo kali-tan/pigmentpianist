@@ -64,3 +64,10 @@ body {
     font-weight:100px;
     font-style:normal;
 }
+
+.two {
+    background-color:#a3b5e6;
+    color:#a3b5e6;
+    font-size:10px;
+    text-align:center;
+}
