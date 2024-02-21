@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Button clicked');
 
         // Get the values of the input fields
-        const redScaled = scaleValue(document.getElementById('red').value);
-        const greenScaled = scaleValue(document.getElementById('green').value);
-        const blueScaled = scaleValue(document.getElementById('blue').value);
+        const redScaled = scaleRedValue(document.getElementById('red').value);
+        const greenScaled = scaleGreenValue(document.getElementById('green').value);
+        const blueScaled = scaleBlueValue(document.getElementById('blue').value);
 
         console.log('Red:', red);
         console.log('Green:', green);
@@ -28,10 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Function to scale the input value from 1-100 to 0-255
-function scaleValue(value) {
-    return Math.round((value / 100) * 255);
+// Function to scale the input value from to 0-255
+function scaleRedValue(red) {
+    return Math.round((red / 100) * 255);
 }
+
+function scaleGreenValue(green) {
+    return Math.round((green / 100) * 255);
+}
+
+function scaleBlueValue(blue) {
+    return Math.round((blue / 3000) * 255);
+}
+
 
 function rgbToHex(red, green, blue) {
     const redHex = red.toString(16).padStart(2, '0');

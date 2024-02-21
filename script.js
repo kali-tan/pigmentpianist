@@ -9,6 +9,55 @@ let sumDecibels = 0;
 let countDecibels = 0;
 let animationFrameId = null;
 
+const startButton = document.getElementById('startButton');
+startButton.addEventListener('click', function() {
+    startButton.disabled = true; // Disable the start button once clicked
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(streamObj) {
+            stream = streamObj;
+            audioContext = new AudioContext();
+            const source = audioContext.createMediaStreamSource(stream);
+            analyser = audioContext.createAnalyser();
+            analyser.fftSize = 2048; // Adjust FFT size for frequency analysis
+            source.connect(analyser);
+
+            const soundBarElement = document.getElementById('soundBar');
+            const soundLevelElement = document.createElement('div');
+            soundLevelElement.id = 'soundLevel';
+            soundBarElement.appendChild(soundLevelElement);
+
+            // Start updating the decibel meter
+            updateDecibelMeter();
+            updateHertzDisplay();
+        })
+        .catch(function(err) {
+            console.error('Error accessing microphone:', err);
+        });
+});
+
+const pauseButton = document.getElementById('pauseButton');
+
+pauseButton.addEventListener('click', function() {
+    paused = !paused; // Toggle pause state
+
+    if (paused) {
+        pauseButton.textContent = 'Resume';
+        cancelAnimationFrame(animationFrameId);
+    } else {
+        pauseButton.textContent = 'Pause';
+        updateDecibelMeter(); // Resume updating the decibel meter
+        updateHertzDisplay();
+    }
+
+});
+
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', function() {
+    // Reload the page
+    location.reload();
+});
+
+
 // Function to update the decibel meter
 function updateDecibelMeter() {
     if (!paused) {
@@ -56,53 +105,40 @@ function updateDecibelMeter() {
 
     // Call this function recursively to update the decibel meter continuously
     animationFrameId = requestAnimationFrame(updateDecibelMeter);
+    
 }
 
-const startButton = document.getElementById('startButton');
-startButton.addEventListener('click', function() {
-    startButton.disabled = true; // Disable the start button once clicked
-    navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(function(streamObj) {
-            stream = streamObj;
-            audioContext = new AudioContext();
-            const source = audioContext.createMediaStreamSource(stream);
-            analyser = audioContext.createAnalyser();
-            analyser.fftSize = 2048; // Adjust FFT size for frequency analysis
-            source.connect(analyser);
+function updateHertzDisplay() {
+    // Get the current Hertz value
+    const hertz = getHertzValue();
 
-            const soundBarElement = document.getElementById('soundBar');
-            const soundLevelElement = document.createElement('div');
-            soundLevelElement.id = 'soundLevel';
-            soundBarElement.appendChild(soundLevelElement);
-
-            // Start updating the decibel meter
-            updateDecibelMeter();
-        })
-        .catch(function(err) {
-            console.error('Error accessing microphone:', err);
-        });
-});
-
-const pauseButton = document.getElementById('pauseButton');
-
-pauseButton.addEventListener('click', function() {
-    paused = !paused; // Toggle pause state
-
-    if (paused) {
-        pauseButton.textContent = 'Resume';
-        cancelAnimationFrame(animationFrameId);
+    // Update the Hertz display
+    const hertzDisplay = document.getElementById('hertzDisplay');
+    if (isFinite(hertz)) {
+        hertzDisplay.textContent = `Hertz: ${hertz.toFixed(2)} Hz`;
     } else {
-        pauseButton.textContent = 'Pause';
-        updateDecibelMeter(); // Resume updating the decibel meter
+        hertzDisplay.textContent = `Hertz: N/A`;
     }
 
-});
+    animationFrameId = requestAnimationFrame(updateHertzDisplay);
+}
 
-const resetButton = document.getElementById('resetButton');
-resetButton.addEventListener('click', function() {
-    // Reload the page
-    location.reload();
-});
+// Call updateHertzDisplay initially
+updateHertzDisplay();
+
+function getHertzValue() {
+    const bufferLength = analyser.frequencyBinCount;
+    const dataArray = new Uint8Array(bufferLength);
+    analyser.getByteTimeDomainData(dataArray);
+
+    // Calculate the frequency (Hertz)
+    const maxIndex = dataArray.indexOf(Math.max(...dataArray));
+    if (maxIndex === 0) {
+        return 0; // or any default value you prefer
+    }
+    const hertz = audioContext.sampleRate / (2 * maxIndex);
+    return hertz;
+}
 
 
 

@@ -21,20 +21,22 @@ body {
 }
 
 .item {
-    height:12vh;
-    width:12vw;
+    height:10vh;
+    width:10vw;
     /* background-color:blue; */
     border-style:solid;
-    border-width:3px;
+    border-width:1px;
     border-color:black;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    font-size:10px;
+    text-align:center;
 }
 
 .one {
-    background-color:#b0b8c2;
-    color:#b0b8c2;
+    background-color:#c4990c;
+    color:#c4990c;
     font-size:10px;
     text-align:center;
 }
@@ -45,11 +47,23 @@ body {
 }
 
 .backarrow {
-    height:12vh;
-    width:12vw;
+    height:10vh;
+    width:10vw;
     /* background-color:blue; */
     /* border-style:solid; */
-    border-width:3px;
+    border-width:1px;
+    border-color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.nextarrow {
+    height:10vh;
+    width:10vw;
+    /* background-color:blue; */
+    /* border-style:solid; */
+    border-width:1px;
     border-color:black;
     display:flex;
     flex-direction:column;
@@ -66,8 +80,144 @@ body {
 }
 
 .two {
-    background-color:#a3b5e6;
-    color:#a3b5e6;
+    background-color:#00a38e;
+    color:#00a38e;
     font-size:10px;
     text-align:center;
+}
+
+.three {
+    background-color:#d9d609;
+    color:#d9d609;
+    font-size:10px;
+    text-align:center;
+}
+
+.four {
+    background-color:#d1bfc0;
+    color:#d1bfc0;
+    font-size:10px;
+    text-align:center;
+}
+
+.five {
+    background-color:#bdc24d;
+    color:#bdc24d;
+    font-size:10px;
+    text-align:center;
+}
+
+.six {
+    background-color:#a6bf81;
+    color:#a6bf81;
+    font-size:10px;
+    text-align:center;
+}
+
+.sixhalf {
+    background-color:#4d5200;
+    color:#4d5200;
+}
+
+.seven {
+    background-color:#d4d922;
+    color:#d4d922;
+    font-size:10px;
+    text-align:center;
+}
+
+.eight {
+    background-color:#99bab8;
+    color:#99bab8;
+    font-size:10px;
+    text-align:center;
+}
+
+.nine {
+    background-color:#a3baff;
+    color:#a3baff;
+    font-size:10px;
+    text-align:center;
+}
+
+.ten {
+    background-color: #ded973;
+    color: #ded973;
+    font-size:10px;
+    text-align:center;
+}
+
+.eleven {
+    background-color: #c2e60a;
+    color: #c2e60a;
+    font-size:10px;
+    text-align:center;
+}
+
+.twelve {
+    background-color:#d4ba55;
+    color:  #d4ba55;
+    font-size:10px;
+    text-align:center;
+}
+
+.thirteen {
+    background-color:#b0bf35;
+    color:  #b0bf35;
+    font-size:10px;
+    text-align:center;
+}
+
+.thirteenhalf {
+    background-color: #00ab00;
+    color: #00ab00;
+}
+
+.fourteen {
+    background-color:#b0b06e;
+    color:  #b0b06e;
+    font-size:10px;
+    text-align:center;
+}
+
+.fifteen {
+    background-color:#b3c914;
+    color:  #b3c914;
+    font-size:10px;
+    text-align:center;
+}
+
+.sixteen {
+    background-color: #cfc2cc;
+    color: #cfc2cc;
+}
+
+.seventeen {
+    background-color: #c9b807;
+    color: #c9b807;
+}
+
+.eighteen {
+    background-color: #d6bf04;
+    color: #d6bf04;
+}
+
+.nineteen {
+    background-color: #1fb300;
+    color: #1fb300;
+}
+
+.twenty {
+    background-color: #d4c2f0;
+    color: #d4c2f0;
+}
+
+.twentyone {
+    background-color: #b8b503;
+    color: #b8b503;
+}
+
+.twentytwo {
+    background-color:  #d9bd5b;
+    color:  #d9bd5b;
 }
