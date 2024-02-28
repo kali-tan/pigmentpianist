@@ -413,9 +413,297 @@ body {
 }
 
 .sixty {
-
+    background-color:#a38a06;
+    color:#a38a06;
 }
 
 .sixtyone {
+    background-color:#c9c70a;
+    color:#c9c70a;
+}
 
+.sixtytwo {
+    background-color:#b8c4aa;
+    color:#b8c4aa;
+}
+
+.sixtythree {
+    background-color: #c2c402;
+    color: #c2c402;
+}
+
+.sixtyfour {
+    background-color:#d6cf02;
+    color:#d6cf02;
+}
+
+.sixtyfive {
+    background-color:#bac9aa;
+    color:#bac9aa;
+}
+
+.sixtysix {
+    background-color:#d4c4b9;
+    color:#d4c4b9;
+}
+
+.sixtyseven {
+    background-color: #c7c202;
+    color: #c7c202;
+}
+
+.sixtyeight {
+    background-color:#e3c459;
+    color:#e3c459;
+}
+
+.sixtynine {
+    background-color:#bd5707;
+    color:#bd5707;
+}
+
+.seventy {
+    background-color:#c9ccff;
+    color:#c9ccff;
+}
+
+.seventyone {
+    background-color:#d9cc0f;
+    color:#d9cc0f;
+}
+
+.seventytwo {
+    background-color:#dec740;
+    color:#dec740;
+}
+
+.seventythree {
+    background-color:#b3b566;
+    color:#b3b566;
+}
+
+.seventyfour {
+    background-color:#b0c708;
+    color:#b0c708;
+}
+
+.seventyfive {
+    background-color:#d4b301;
+    color:#d4b301;
+}
+
+.seventysix {
+    background-color:#e0d401;
+    color:#e0d401;
+}
+
+.seventyseven {
+    background-color:#ccd635;
+    color:#ccd635;
+}
+
+.seventyeight {
+    background-color:#4a8f2a;
+    color:#4a8f2a;
+}
+
+.seventynine {
+    background-color:#bfc901;
+    color:#bfc901;
+}
+
+.eighty {
+    background-color:#debf01;
+    color:#debf01;
+}
+
+.eightyone {
+    background-color:#dbc702;
+    color:#dbc702;
+}
+
+.eightytwo {
+    background-color:#dbcf12;
+    color:#dbcf12;
+}
+
+.eightythree {
+    background-color:#b5d6e3;
+    color:#b5d6e3;
+}
+
+.eightyfour {
+    background-color:#00bd00;
+    color:#00bd00;
+}
+
+.eightyfive {
+    background-color: #5ed92a;
+    color: #5ed92a;
+}
+
+.eightysix {
+    background-color:#cc8501;
+    color:#cc8501;
+}
+
+.eightyseven {
+    background-color:#ccc201;
+    color:#ccc201;
+}
+
+.eightyeight {
+    background-color:#b8b508;
+    color:#b8b508;
+}
+
+.eightynine {
+    background-color:#039990;
+    color:#039990;
+}
+
+.ninety {
+    background-color: #007500;
+    color: #007500;
+}
+
+.ninetyone {
+    background-color:#99b306;
+    color:#99b306;
+}
+
+.ninetytwo {
+    background-color:#bac701;
+    color:#bac701;
+}
+
+.ninetythree {
+    background-color:#c4ad01;
+    color:#c4ad01;
+}
+
+.ninetyfour {
+    background-color:#0085ff;
+    color:#0085ff;
+}
+
+.ninetyfive {
+    background-color:#b8a618;
+    color:#b8a618;
+}
+
+.ninetysix {
+    background-color: #c7b8ff;
+    color: #c7b8ff;
+}
+
+.ninetyseven {
+    background-color:#c2ab09;
+    color:#c2ab09;
+}
+
+.ninetyeight {
+    background-color:#0063ff;
+    color:#0063ff;
+}
+
+.ninetynine {
+    background-color:#5e5e00;
+    color:#5e5e00;
+}
+
+.hundred {
+    background-color: #526915;
+    color: #526915;
+}
+
+.hundredone {
+    background-color:#d1c707;
+    color:#d1c707;
+
+}
+
+.hundredtwo {
+    background-color:#d9bf01;
+    color:#d9bf01;
+}
+
+.hundredthree {
+    background-color:#5445ff;
+    color:#5445ff;
+}
+
+.hundredfour {
+    background-color:#00b0aa;
+    color:#00b0aa;
+}
+
+.hundredfive {
+    background-color:#e36108;
+    color:#e36108;
+}
+
+.hundredsix {
+    background-color:#b8ad09;
+    color:#b8ad09;
+}
+
+.hundredseven {
+    background-color:#bfb5ff;
+    color:#bfb5ff;
+}
+
+.hundredeight {
+    background-color:#a39900;
+    color:#a39900;
+}
+
+.hundrednine {
+    background-color:#a6a100;
+    color:#a6a100;
+}
+
+.hundredten {
+    background-color:#d6b540;
+    color:#d6b540;
+}
+
+.hundredeleven {
+    background-color:#b0a301;
+    color:#b0a301;
+}
+
+.hundredtwelve {
+    background-color:#99b800;
+    color:#99b800;
+}
+
+.hundredthirteen {
+    background-color:#a6b040;
+    color:#a6b040;
+}
+
+.hundredfourteen {
+    background-color:#abad14;
+    color:#abad14;
+}
+
+.hundredfifteen {
+    background-color:#d6ad08;
+    color:#d6ad08;
+}
+
+.hundredsixteen {
+    background-color:#bfa802;
+    color:#bfa802;
+}
+
+.hundredseventeen {
+    background-color:#b0a800;
+    color:#b0a800;
+}
+
+.hundredeighteen {
+    background-color:#babd0d;
+    color:#babd0d;
 }
