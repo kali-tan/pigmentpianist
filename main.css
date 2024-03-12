@@ -9,7 +9,147 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color:whitesmoke;
+    background-color:black;
+}
+
+.menubar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    height:5vh;
+    width:100vw;
+    color:red;
+    font-family: Digital;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:absolute;
+    top:0;
+}
+
+.activatedbar {
+    position:absolute;
+    color:black;
+    top:0;
+    z-index:-1;
+    width:100vw;
+    /* background-color:yellow; */
+    height:30px;
+    left:0;
+}
+
+.aboutactivate {
+    animation:abtload 2s forwards;
+}
+
+.meteractivate {
+    animation:mtrload 2s forwards;
+}
+
+.calcactivate {
+    animation:calcload 2s forwards;
+}
+
+.hexactivate {
+    animation:hexload 2s forwards;
+}
+
+.peractivate {
+    animation:perload 2s forwards;
+}
+
+.artactivate {
+    animation:artload 2s forwards;
+}
+
+@keyframes abtload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:16vw;
+        color:red;
+    }
+}
+
+@keyframes mtrload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:28vw;
+        color:red;
+    }
+}
+
+@keyframes calcload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:43vw;
+        color:red;
+    }
+}
+
+@keyframes hexload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:55vw;
+        color:red;
+    }
+}
+
+@keyframes perload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:75vw;
+        color:red;
+    }
+}
+
+@keyframes artload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+
+    100% {
+        background-color:red;
+        width:95vw;
+        color:red;
+    }
+}
+
+.subpage:hover {
+    color:white;
+    cursor:pointer;
+    transition:1s;
 }
 
 #soundBarContainer {
@@ -20,7 +160,8 @@ body {
 #soundBar {
     width: 400px; /* Adjust the width as needed */
     height: 20px; /* Adjust the height as needed */
-    background-color: #f0f0f0;
+    background-color: #f0f0f096;
+    align-items:center;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -28,7 +169,7 @@ body {
 #soundLevel {
     width: 0;
     height: 100%;
-    background-color: #007bff; /* Change the color as needed */
+    background-color: red; /* Change the color as needed */
     transition: width 0.1s ease-in-out;
 }
 
@@ -36,39 +177,44 @@ body {
     font-size: 16px;
     margin-top: 10px;
     font-family: Digital ;
+    color:white;
 }
 
 #hertzDisplay {
     font-size: 16px;
     margin-top: 10px;
     font-family: Digital ;
+    color:white;
 }
 
 #buttonContainer {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap:10px;
 }
 
 button {
-   background-color:#007bff;
+   background-color:red;
    color:white;
    border:none;
    width:100px;
    margin-top:15px;
    height:25px;
    transition:0.4s;
+   font-family: Digital;
 }
 
 button:hover {
-    background-color: #144a84;
+    background-color: rgba(255, 0, 0, 0.399);
     cursor:pointer;
 }
 
 .main-container {
     display:flex;
     flex-direction:column;
+    height:250vh;
 }
+
 
 .top {
     display:flex;
@@ -79,7 +225,9 @@ button:hover {
     /* background-color:orange; */
     font-size:50px;
     font-family: Digital;
-    animation:blink 4s infinite linear;
+    animation:blink 10s infinite linear;
+    transition: 1s;
+    margin-top:30vh;
 }
 
 @font-face {
@@ -92,15 +240,47 @@ button:hover {
 
 @keyframes blink {
     0% {
-        color:black;
+        color:white;
+    }
+
+    10% {
+        color:#008cff;
+    }
+
+    20% {
+        color:#b8ad09;
+    }
+
+    30% {
+        color:#00912a;
+    }
+
+    40% {
+        color:#bfb306;
     }
 
     50% {
-        color:#007bff;
+        color:#039990;
+    }
+
+    60% {
+        color:#d9cc0f;
+    }
+
+    70% {
+        color:#c7c202;
+    }
+
+    80% {
+        color:#cca60d;
+    }
+
+    90% {
+        color:#99bab8;
     }
 
     100% {
-        color:black;
+        color:white;
     }
 }
 
@@ -135,6 +315,7 @@ button:hover {
     display: block;
     margin-bottom: 5px;
     font-family: Digital;
+    color:white;
   }
   
   input {
@@ -161,3 +342,4 @@ button:hover {
 .one {
     margin-right:100px;
 }
+

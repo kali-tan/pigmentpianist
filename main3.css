@@ -4,14 +4,158 @@
 
 body {
     margin:0 auto;
+    background-color:black;
 }
 
+.menubar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    height:5vh;
+    width:100vw;
+    color:red;
+    font-family: Digital;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:absolute;
+    top:0;
+  }
+  
+  .activatedbar {
+    position:absolute;
+    color:rgba(0, 0, 0, 0.566);
+    top:0;
+    z-index:-1;
+    width:100vw;
+    /* background-color:yellow; */
+    height:30px;
+    left:0;
+  }
+  
+  .aboutactivate {
+    animation:abtload 2s forwards;
+  }
+  
+  .meteractivate {
+    animation:mtrload 2s forwards;
+  }
+  
+  .calcactivate {
+    animation:calcload 2s forwards;
+  }
+  
+  .hexactivate {
+    animation:hexload 2s forwards;
+  }
+  
+  .peractivate {
+    animation:perload 2s forwards;
+  }
+  
+  .artactivate {
+    animation:artload 2s forwards;
+  }
+  
+  @keyframes abtload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:16vw;
+        color:red;
+    }
+  }
+  
+  @keyframes mtrload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:28vw;
+        color:red;
+    }
+  }
+  
+  @keyframes calcload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:43vw;
+        color:red;
+    }
+  }
+  
+  @keyframes hexload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:55vw;
+        color:red;
+    }
+  }
+  
+  @keyframes perload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:75vw;
+        color:red;
+    }
+  }
+  
+  @keyframes artload {
+    0% {
+        background-color:none;
+        width:0vw;
+        color:black;
+    }
+  
+    100% {
+        background-color:red;
+        width:95vw;
+        color:red;
+    }
+  }
+  
+  .subpage:hover {
+    color:white;
+    cursor:pointer;
+    transition:1s;
+  }
+  
+
 .main-container {
-    background-color:whitesmoke;
+    background-color:black;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
     gap:10px;
+    font-family: Digital;
+    margin-top:30px;
 }
 
 .row {
@@ -28,7 +172,7 @@ body {
     /* background-color:blue; */
     border-style:solid;
     border-width:1px;
-    border-color:black;
+    border-color:white;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -706,4 +850,274 @@ body {
 .hundredeighteen {
     background-color:#babd0d;
     color:#babd0d;
+}
+
+.hundrednineteen {
+    background-color:#91b500;
+    color:#91b500;
+}
+
+.hundredtwenty {
+    background-color:#828500;
+    color:#828500;
+}
+
+.hundredtwentyone {
+    background-color:#aba30e;
+    color:#aba30e;
+}
+
+.hundredtwentytwo {
+    background-color:#bdb502;
+    color:#bdb502;
+}
+
+.hundredtwentythree {
+    background-color:#6ba188;
+    color:#6ba188;
+}
+
+.hundredtwentyfour {
+    background-color:#ccc703;
+    color:#ccc703;
+}
+
+.hundredtwentyfive {
+    background-color:#e8c71e;
+    color:#e8c71e;
+}
+
+.hundredtwentysix {
+    background-color:#b5b002;
+    color:#b5b002;
+}
+
+.hundredtwentyseven {
+    background-color:#a8c288;
+    color:#a8c288;
+}
+
+.hundredtwentyeight {
+    background-color:#c2bacc;
+    color:#c2bacc;
+}
+
+.hundredtwentynine {
+    background-color:#c7b302;
+    color:#c7b302;
+}
+
+.hundredthirty {
+    background-color:#bfc440;
+    color:#bfc440;
+}
+
+.hundredthirtyone {
+    background-color:#b0b092;
+    color:#b0b092;
+}
+
+.hundredthirtytwo {
+    background-color:#bfc440;
+    color:#bfc440;
+}
+
+.hundredthirtythree {
+    background-color:#adb803;
+    color:#adb803;
+}
+
+.hundredthirtyfour {
+    background-color:#b5b802;
+    color:#b5b802;
+}
+
+.hundredthirtyfive {
+    background-color:#bdba09;
+    color:#bdba09;
+}
+
+.hundredthirtysix {
+    background-color:#bab81e;
+    color:#bab81e;
+}
+
+.hundredthirtyseven {
+    background-color:#d1c72e;
+    color:#d1c72e;
+}
+
+.hundredthirtyeight {
+    background-color:#bfb306;
+    color:#bfb306;
+}
+
+.hundredthirtynine {
+    background-color:#bfa60e;
+    color:#bfa60e;
+}
+
+.hundredforty {
+    background-color:#a1ba0f;
+    color:#a1ba0f;
+}
+
+.hundredfortyone {
+    background-color:#d1cf15;
+    color:#d1cf15;
+}
+
+.hundredfortytwo {
+    background-color: #d6a806;
+    color:#d6a806;
+}
+
+.hundredfortythree {
+    background-color:#bdc905;
+    color:#bdc905;
+}
+
+.hundredfortyfour {
+    background-color:#a8ad31;
+    color:#a8ad31;
+}
+
+.hundredfortyfive {
+    background-color:#cfcc03;
+    color:#cfcc03;
+}
+
+.hundredfortysix {
+    background-color:#babfff;
+    color:#babfff;
+}
+
+.hundredfortyseven {
+    background-color:#a6a6ff;
+    color:#a6a6ff;
+}
+
+.hundredfortyeight {
+    background-color:#babaaa;
+    color:#babaaa;
+}
+
+.hundredfortynine {
+    background-color:#b5b055;
+    color:#b5b055;
+}
+
+.hundredfifty {
+    background-color:#a6a603;
+    color:#a6a603;
+}
+
+.hundredfiftyone {
+    background-color:#c7cc04;
+    color:#c7cc04;
+}
+
+.hundredfiftytwo {
+    background-color:#bfbd02;
+    color:#bfbd02;
+}
+
+.hundredfiftythree {
+    background-color:#b3ad59;
+    color:#bdad59;
+}
+
+.hundredfiftyfour {
+    background-color:#cfbdff;
+    color:#cfbdff;
+}
+
+.hundredfiftyfive {
+    background-color:#a1bd00;
+    color:#a1bd00;
+}
+
+.hundredfiftysix {
+    background-color:#d9b30b;
+    color:#d9b30b;
+}
+
+.hundredfiftyseven {
+    background-color:#d1cc10;
+    color:#d1cc10;
+}
+
+.hundredfiftyeight {
+    background-color:#c4c903;
+    color:#c4c903;
+}
+
+.hundredfiftynine {
+    background-color:#bac401;
+    color:#bac401;
+}
+
+.hundredsixty {
+    background-color:#c7cc03;
+    color:#c7cc03;
+}
+
+.hundredsixtyone {
+    background-color:#c9c408;
+    color:#c9c408;
+}
+
+.hundredsixtytwo {
+    background-color:#abad0b;
+    color:#abad0b;
+}
+
+.hundredsixtythree {
+    background-color:#b39c09;
+    color:#b39c09;
+}
+
+.hundredsixtyfour {
+    background-color:#a8ab0c;
+    color:#a8ab0c;
+}
+
+.hundredsixtyfive {
+    background-color:#abab31;
+    color:#abab31;
+}
+
+.hundredsixtysix {
+    background-color:#c2bd2b;
+    color:#c2bd2b;
+}
+
+.hundredsixtyseven {
+    background-color:#cce680;
+    color:#cce680;
+}
+
+.hundredsixtyeight {
+    background-color:#9e990a;
+    color:#9e990a;
+}
+
+.hundredsixtynine {
+    background-color:#a1a309;
+    color:#a1a309;
+}
+
+.hundredseventy {
+    background-color:#a89eff;
+    color:#a89eff;
+}
+
+.hundredseventyone {
+    background-color:#a89904;
+    color:#a89904;
+}
+
+.hundredseventytwo {
+    background-color: #008cff;
+    color: #008cff;
 }

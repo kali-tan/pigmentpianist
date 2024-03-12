@@ -1,69 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.566);
-    color:white;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-    background-color: gray;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
-    margin-right: 10px;
-    font-family: Digital; 
-  }
-
-  button {
-    background-color:red;
-    color:white;
-    border:none;
-    width:100px;
-    height:25px;
-    transition:0.4s;
-    font-family: Digital;
- }
-  
- button:hover {
-  background-color:rgba(255, 0, 0, 0.399);
-  cursor:pointer;
-}
-
-.one {
-  /* background-color:orange; */
-}
-
-.three2{
-  /* background-color:orange; */
-  padding-left: 5px;
-}
-
-.three2:hover {
-  cursor:pointer;
+* {
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Digital";
-  src: url("fonts/digital-7\ \(mono\).ttf");
-  src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
-  font-weight:100px;
-  font-style:normal;
+    font-family: "Digital";
+    src: url("fonts/digital-7\ \(mono\).ttf");
+    src: url("fonts/digital-7\ \(mono\).ttf") format('truetype');
+    font-weight:100px;
+    font-style:normal;
+}
+
+
+body {
+  margin: 1rem;
+  padding: 0;
+  background: black;
+  font-family: Digital;
+  color:white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button,
+a,
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  font-family: Digital;
+  color: white;
+  text-decoration: none;
+}
+
+button:hover,
+a:hover,
+.btn:hover {
+  opacity: .5;
+}
+
+/* the saved entries container */
+#entries {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* the individual entry boxes */
+.entry {
+  border-radius: 5px;
+  width: 150px;
+  height: 70px;
+  position: relative;
+  padding: .5rem;
+  top:15vh;
+
+  /* a slightly transparent default background in case 
+    the hexcode does not exist or something that wasn't 
+    a color was input */
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.entry button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem;
 }
 
 .bottom {
-  display:flex;
-  flex-direction: row; 
-  justify-content: space-evenly;
-  margin-top:100px;
-  font-family: Digital ; 
-  font-size: 25px;
+    display:flex;
+    /* background-color:orange; */
+    justify-content: space-evenly;
+    margin-top:200px;
 }
 
 .menubar {

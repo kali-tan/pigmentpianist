@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Gallery</title>
-        <link rel="stylesheet" href="main3.css">
+        <title>Personal Gallery</title>
+        <link rel="stylesheet" href="main4.css">
+        <link rel="icon" type="image/png" href="images/music.png">
     </head>
 
     <body>
+        <div class="activatedbar">-</div>
+    
+        <div class="menubar">
+            <div class="subpage abt">ABOUT</div>
+            <div class="subpage mtr">METER</div>
+            <div class="subpage calc">CALCULATOR</div>
+            <div class="subpage hex">HEXCODE</div>
+            <div class="subpage per">PERSONAL GALLERY</div>
+            <div class="subpage art">ARTIST GALLERY</div>
+        </div>
 
+
+        <!-- the container where our saved entries will go -->
+        <div id="entries"></div>
+
+        <input id="entry-input">
+        <button onclick="saveEntry()">Save</button>
+        
+        <div class="bottom">
+            <div class="backarrow">
+                <a href="colorpage.html">
+                  <img src="images/backarrow.png" width="100px">
+                </a>
+            </div>
+            <div class="nextarrow">
+                <a href="gallery.html">
+                    <img src="images/arrow.png" width="100px">
+                </a>
+            </div>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="script4.js"></script>
     </body>
 </html>
