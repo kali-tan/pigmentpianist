@@ -7,6 +7,11 @@ body {
     background-color:black;
 }
 
+.appear {
+    opacity:1;
+    transition:1s;
+}
+
 .bodyaction {
     animation: galleryscroll 10s infinite;
 }
@@ -27,11 +32,28 @@ body {
 .top {
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     width:100vw;
     height:10vh;
 }
 
+.topleft {
+    margin-top:50px;
+    font-family: Digital;
+    font-size:50px;
+    animation: blink 10s infinite linear;
+    transition:1s;
+    opacity:1;
+}
+
+.topright {
+    margin-top:50px;
+    font-family: Digital;
+    font-size:50px;
+    animation: blink 10s infinite linear;
+    transition:1s;
+    opacity:1;
+}
 
 .description {
     display:flex;
@@ -67,7 +89,6 @@ body {
 .appear {
     opacity:1;
     transition:1s;
-
 }
 
 .middle {
@@ -591,3 +612,41 @@ body {
     cursor:pointer;
     transition:1s;
   }
+
+
+.second {
+    display:flex;
+    flex-direction:row;
+    color:white;
+    font-family: Digital;
+    justify-content: space-evenly;
+    margin-top:17px;
+}
+
+.leftsec {
+    opacity:1;
+}
+
+.leftmid {
+    opacity:1;
+}
+
+.leftright {
+    opacity:1;
+}
+
+.second:hover {
+    cursor:pointer;
+}
+
+.leftsec:hover {
+    color:red;
+}
+
+.leftmid:hover {
+    color:red;
+}
+
+.leftright:hover {
+    color:red;
+}

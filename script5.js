@@ -9,6 +9,7 @@ $(".one").hover(
     function(){
         $(".one").toggleClass("oneaction");
         $(".topmiddle").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
         $(".descriptionone").toggleClass("appear");
     }
 );
@@ -24,6 +25,7 @@ $(".two").hover(
     function(){
         $(".two").toggleClass("twoaction");
         $(".topmiddle").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
         $(".descriptiontwo").toggleClass("appear");
     }
 );
@@ -38,6 +40,7 @@ $(".three").hover(
     function(){
         $(".three").toggleClass("threeaction");
         $(".topmiddle").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
         $(".descriptionthree").toggleClass("appear");
     }
 );
@@ -51,6 +54,8 @@ $(".four").click(
 $(".four").hover(
     function(){
         $(".four").toggleClass("fouraction");
+        $(".topleft").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
     }
 );
 
@@ -63,6 +68,8 @@ $(".five").click(
 $(".five").hover(
     function(){
         $(".five").toggleClass("fiveaction");
+        $(".topleft").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
     }
 );
 
@@ -77,6 +84,8 @@ $(".six").click(
 $(".six").hover(
     function(){
         $(".six").toggleClass("sixaction");
+        $(".topleft").toggleClass("disappear");
+        $(".topright").toggleClass("disappear");
     }
 );
 
@@ -90,6 +99,7 @@ $(".seven").hover(
     function(){
         $(".seven").toggleClass("sevenaction");
         $(".topmiddle").toggleClass("disappear");
+        $(".topleft").toggleClass("disappear");
         $(".descriptionfour").toggleClass("appear");
     }
 );
@@ -97,6 +107,8 @@ $(".seven").hover(
 $(".eight").hover(
     function(){
         $("body").toggleClass("bodyaction");
+        $(".topleft").toggleClass("disappear");
+        $(".topmiddle").toggleClass("disappear");
     }
 );
 
@@ -172,6 +184,8 @@ $(".art").click(
         window.location.href='gallery.html';
     }
 );
+
+
 
 
 

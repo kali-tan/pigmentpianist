@@ -344,3 +344,16 @@ button:hover {
     margin-right:100px;
 }
 
+.instruction {
+    color:white;
+    font-family: Digital;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    font-size:13px;
+}
+
+.insmid {
+    margin-top:10px;
+}
+
